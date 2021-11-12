@@ -16,7 +16,6 @@ class ReadText {
             archivo = new File ("C:\\Users\\stefano.belfiore\\IdeaProjects\\Exercise 1\\src\\main\\java\\exercise.txt");
             fr = new FileReader (archivo);
             br = new BufferedReader(fr);
-            List<Persona> personas = new ArrayList<>();
 
             // Lectura del fichero
             String linea = "";
