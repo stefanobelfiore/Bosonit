@@ -19,7 +19,7 @@ public class Controler {
     public User printUser(@RequestBody User user){
         User answer = new User();
         answer.setName(user.getName());
-        answer.setEdad(user.getEdad());
+        answer.setEdad(user.getEdad()+1);
         answer.setCiudad(user.getCiudad());
         return answer;
     }
