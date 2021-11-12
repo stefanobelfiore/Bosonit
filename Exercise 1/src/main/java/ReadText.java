@@ -2,16 +2,6 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/*public class Main {
-    public static void main (String[] args) throws IOException {
-        FileReader f = new FileReader("exercise.txt");
-        int i;
-        // Holds true till there is nothing to read
-        while ((i = f.read()) != -1)
-            // Print all the content of a file
-            System.out.print((char)i);
-    }
-}*/
 
 
 class ReadText {
@@ -26,7 +16,6 @@ class ReadText {
             archivo = new File ("C:\\Users\\stefano.belfiore\\IdeaProjects\\Exercise 1\\src\\main\\java\\exercise.txt");
             fr = new FileReader (archivo);
             br = new BufferedReader(fr);
-            List<Persona> personas = new ArrayList<>();
 
             // Lectura del fichero
             String linea = "";
