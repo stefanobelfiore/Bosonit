@@ -3,14 +3,14 @@ package com.example.demo;
 public class User {
 
     private String name;
-    private String edad;
+    private int edad;
     private String ciudad;
 
-    public String getEdad() {
+    public int getEdad() {
         return edad;
     }
 
-    public void setEdad(String edad) {
+    public void setEdad(int edad) {
         this.edad = edad;
     }
 
