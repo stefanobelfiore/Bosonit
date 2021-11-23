@@ -18,9 +18,8 @@ public class ControladorDelete {
     @DeleteMapping("persona/{id}")
     public List deletePerson(@PathVariable int id){
 
-        Stream mylist = personList.person.stream().filter(idp ->idp.getId() !=id);
-        int indexToDelete = personList.person.indexOf(mylist);
-        personList.person.remove(indexToDelete + 1);
+        personList.person.remove(id);
+        
 
         return personList.person;
 
