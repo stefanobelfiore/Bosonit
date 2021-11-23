@@ -6,9 +6,7 @@ import org.springframework.stereotype.Service;
 @Service
 @Data
 public class Person implements PersonInterface {
-    /**  Optional<String> name= Optional.empty();
-    Optional<Integer> age= Optional.empty();
-    Optional<String> population= Optional.empty();*/
+    
 
  String name;
     int age;
