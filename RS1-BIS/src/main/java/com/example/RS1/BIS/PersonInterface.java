@@ -1,5 +1,7 @@
 package com.example.RS1.BIS;
 
+import java.util.stream.Stream;
+
 @SuppressWarnings("SpellCheckingInspection")
 
 public interface PersonInterface {

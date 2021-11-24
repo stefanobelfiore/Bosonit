@@ -2,11 +2,12 @@ package com.example.RS1.BIS;
 import lombok.Data;
 import org.springframework.stereotype.Service;
 
+import java.util.stream.Stream;
+
 @SuppressWarnings("SpellCheckingInspection")
 @Service
 @Data
 public class Person implements PersonInterface {
-    
 
  String name;
     int age;
@@ -29,4 +30,6 @@ public class Person implements PersonInterface {
     public void setAge(int age) {
       this.age = age;
     }
+
+
 }
