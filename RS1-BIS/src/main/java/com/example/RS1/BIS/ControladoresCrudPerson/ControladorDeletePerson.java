@@ -17,20 +17,15 @@ public class ControladorDeletePerson {
 
     @DeleteMapping("persona/{id}")
     public String deletePerson(@PathVariable int id){
+<<<<<<< HEAD:RS1-BIS/src/main/java/com/example/RS1/BIS/ControladoresCrudPerson/ControladorDeletePerson.java
         
         personService.deletePerson(id);
+=======
+
+        personList.person.removeIf(person -> person.getId() == id);
+>>>>>>> 54fc65d1a0f3f8d8c5e4f3e25df7edb08ba000b1:RS1-BIS/src/main/java/com/example/RS1/BIS/ControladorDelete.java
 
         return "La persona con el id "+ id + " ha sido eliminada";
     }
 
 }
-
-
-
-/**Iterator<PersonInterface> iter = personList.person.iterator();
- for(PersonInterface person: personList.person) {
- if(person.getId() == id){
- personList.person.remove(person);
- System.out.println(person.getId());
- }
- }*/
