@@ -15,24 +15,10 @@ public class ControladorDelete {
 
     @DeleteMapping("persona/{id}")
     public String deletePerson(@PathVariable int id){
-<<<<<<< HEAD
-        
-=======
 
->>>>>>> 4074796ac5851553d94aada8ac1629370c0515b2
         personList.person.removeIf(person -> person.getId() == id);
 
         return "La persona con el id "+ id + " ha sido eliminada";
     }
 
 }
-
-
-
-/**Iterator<PersonInterface> iter = personList.person.iterator();
- for(PersonInterface person: personList.person) {
- if(person.getId() == id){
- personList.person.remove(person);
- System.out.println(person.getId());
- }
- }*/
