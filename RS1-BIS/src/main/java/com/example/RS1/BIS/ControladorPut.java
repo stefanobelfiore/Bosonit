@@ -23,10 +23,11 @@ public class ControladorPut {
         personService = body;
         Stream mylist = personList.person.stream()
                 .filter(idp ->idp.getId()==id)
-                .peek(obj -> {
+                .map(obj -> {
                     if(body.getName() != null){obj.setName(body.getName());}
                     if(body.getPopulation() != null ){obj.setPoblation(body.getPopulation());}
                     if(body.getAge() != 0){obj.setAge(body.getAge());}
+                    return obj
                 ;});
 
         return mylist;
