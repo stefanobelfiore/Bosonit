@@ -18,7 +18,7 @@ public class ControladorDelete {
 
         personList.person.removeIf(person -> person.getId() == id);
 
-        return "La persona con el id "+ id + "ha sido eliminada";
+        return "La persona con el id "+ id + " ha sido eliminada";
     }
 
 }
