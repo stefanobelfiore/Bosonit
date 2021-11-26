@@ -1,4 +1,4 @@
-package com.example.BS41;
+package com.example.BS41.ControladorApplicationProperties;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SuppressWarnings("SpellCheckingInspection")
 @RestController
-public class ControladorGetVariables {
+public class ControladorGetApplicationProperties {
 
     @Value("${url}")
     String url;
@@ -18,6 +18,5 @@ public class ControladorGetVariables {
     public String getVariablesProperties(){
         return"Url: "+url+" Password: "+ password;
     }
-
 
 }
