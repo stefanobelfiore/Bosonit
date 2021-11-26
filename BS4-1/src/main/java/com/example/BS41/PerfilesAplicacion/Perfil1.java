@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @SuppressWarnings("SpellCheckingInspection")
 @Component
-@Profile("default")
+@Profile("profileactive")
 public class Perfil1 implements Perfiles{
 
     public String perfil = "perfil1";
