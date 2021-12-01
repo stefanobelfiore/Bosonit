@@ -26,7 +26,7 @@ public  class  PersonaMapper {
         return personaOutputDto;
     }
 
-    public Persona checkNullToUpdate(PersonaInputDto personaInputDto){
+    public Persona toEntity(PersonaInputDto personaInputDto){
 
         Persona persona = new Persona();
 

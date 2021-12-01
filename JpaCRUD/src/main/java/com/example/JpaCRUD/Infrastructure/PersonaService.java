@@ -81,7 +81,7 @@ public class PersonaService implements IPersonaService{
 
         Persona persona = personaRepositorio.findById(id).orElseThrow(()->new Exception("Id no encontrado"));
 
-        Persona personaEditada = personaMapper.checkNullToUpdate(personaInputDto);
+        Persona personaEditada = personaMapper.toEntity(personaInputDto);
         personaEditada.setId(persona.getId());
         personaRepositorio.save(personaEditada);
 
